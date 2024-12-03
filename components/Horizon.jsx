@@ -9,7 +9,7 @@ const Horizon = () => {
 
 const sliderLeft = () => {
   var slider = document.getElementById ('slider')
-  slider.scrollleft = slider.scrollLeft -500
+  slider.scrollLeft = slider.scrollLeft -500
 }
 
 const slideright = () => {
@@ -19,9 +19,9 @@ const slideright = () => {
 
  
   return (
-    <div  className='ralative flex items-center'>
+    <div >
         <h1> hello</h1>
-        <div>
+        <div  className='ralative flex items-center'>
             <MdChevronLeft className='opacity-50 cursor-pointer hover:opacity-100' onClick={sliderLeft}   size={40} />
        <div id='slider' className='w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth'>
        {data.map((item)=>(
