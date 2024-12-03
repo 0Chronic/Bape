@@ -1,5 +1,4 @@
 "use client"
-
 import React,{useState} from 'react'
 
 import Link from 'next/link'
@@ -18,7 +17,7 @@ const Navbar = () => {
 
 
   return (
-    <div>
+    <div >
       <div className='flex items-center justify-between w-full h-full px-2 2xl:px-16'>
         <Link href='/'>
         <>

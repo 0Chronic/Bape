@@ -8,7 +8,7 @@ export default function Home() {
   <div>
  <Navbar />
  <Slider />
- <Horizon />
+
   </div>
   );
 }
