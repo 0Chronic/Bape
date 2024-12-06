@@ -19,8 +19,8 @@ const slideright = () => {
 
  
   return (
-    <div >
-        <h1> hello</h1>
+    <div className='my-5 mb-5'>
+        <h1 className='text-center text-2xl font-bold underline'> New Arrivals</h1>
         <div  className='ralative flex items-center'>
             <MdChevronLeft className='opacity-50 cursor-pointer hover:opacity-100' onClick={sliderLeft}   size={40} />
        <div id='slider' className='w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth'>
@@ -29,7 +29,11 @@ const slideright = () => {
          ))}
        </div>
        <MdChevronRight  className='opacity-50 cursor-pointer hover:opacity-100' onClick={slideright}  size={40} />
+       
         </div>
+        <div className="border-b-2 border-black pb-2 my-5">
+     
+    </div>
     </div>
   )
 }
