@@ -19,7 +19,7 @@ const slideright = () => {
 
  
   return (
-    <div className='my-5 mb-5'>
+    <div className='relative z-10 my-5 mb-5'>
         <h1 className='text-center text-2xl font-bold underline'> New Arrivals</h1>
         <div  className='relative flex items-center'>
             <MdChevronLeft className='opacity-50 cursor-pointer hover:opacity-100' onClick={sliderLeft}   size={40} />

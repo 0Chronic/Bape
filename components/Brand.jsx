@@ -8,8 +8,8 @@ import bapy from '../public/assets/bapy.webp'
 const Brand = () => {
   return (
     <div>
-         <h1 className='text-center font-bold text-xl'>Brands</h1>
-      <div className='grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-5 sm:p-5'>
+         <h1 className='text-center font-bold text-xl mb-8 underline'>Brands</h1>
+      <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 p-4'>
 
      
       <Image src={bathing}

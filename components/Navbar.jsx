@@ -22,8 +22,8 @@ const Navbar = () => {
         <Link href='/'>
         <>
           <Image src={logo}  alt='/'
-              width='70'
-              height='50'/>
+              width={70}
+              height={50} className='p-2'/>
         </>
         </Link>
 
@@ -34,19 +34,15 @@ const Navbar = () => {
               <Link href='/'>Home</Link>
             </li>
             <li className='ml-10 text-md uppercase hover:border-b'>
-              <Link href='/#about'>About</Link>
+              <Link href='/#about'>Arrivals</Link>
             </li>
             <li className='ml-10 text-md uppercase hover:border-b'>
               <Link href='/#skills'>Skills</Link>
             </li>
+            
+           
             <li className='ml-10 text-md uppercase hover:border-b'>
-              <Link href='/#projects'>Projects</Link>
-            </li>
-            <li className='ml-10 text-md uppercase hover:border-b'>
-              <Link href='/resume'>Resume</Link>
-            </li>
-            <li className='ml-10 text-md uppercase hover:border-b'>
-              <Link href='/#contact'>Contact</Link>
+              <Link href='/#contact'>Brands</Link>
             </li>
           </ul>
 
@@ -62,8 +58,8 @@ const Navbar = () => {
 
           {/*mobile view */}
 
-            <div className={nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70': ''} >
-              <div className={nav? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500' : 'fixed left-[-100%] top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500'}>
+            <div onClick={handleNav}  className={nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70 z-50 ': ''} >
+              <div className={nav ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500 z-50' : 'fixed left-[-100%] top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500'}>
                
 
                <div>
@@ -87,12 +83,7 @@ const Navbar = () => {
             <li className='py-4 text-md uppercase hover:border-b'>
               <Link href='/#skills'>Skills</Link>
             </li>
-            <li className='py-4 text-md uppercase hover:border-b'>
-              <Link href='/#projects'>Projects</Link>
-            </li>
-            <li className='py-4 text-md uppercase hover:border-b'>
-              <Link href='/resume'>Resume</Link>
-            </li>
+            
             <li className='py-4 text-md uppercase hover:border-b'>
               <Link href='/#contact'>Contact</Link>
             </li>
